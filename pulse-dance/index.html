@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3ecdf">
+  <title>Pulse Dance — школа танцев в Казани</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="schedule.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body id="top">
+<svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs>
+  <clipPath id="duet" clipPathUnits="objectBoundingBox"><path transform="scale(.001111111 .001388889)" clip-rule="evenodd" d="M172 629 Q169 617 181 609 L212 579 211 569 208 506 Q202 466 215 435 Q237 397 280 379 L289 366 298 363 313 328 315 293 Q294 280 287 258 L287 249 Q273 242 284 227 L289 215 Q284 198 307 193 L333 175 353 165 365 150 Q357 141 357 126 Q342 91 362 74 Q389 51 414 68 Q438 78 433 114 L431 136 425 144 Q443 151 447 176 L459 180 476 201 490 214 498 214 Q484 195 498 181 Q504 176 519 189 L535 195 Q550 196 544 219 L539 237 529 247 523 246 524 267 Q533 294 515 308 Q502 318 478 319 L474 355 491 366 Q540 381 556 421 Q564 439 559 460 L591 481 Q607 492 631 496 Q662 506 695 538 L728 570 739 568 749 580 759 581 Q781 587 791 618 L791 631 771 633 754 623 727 612 705 591 Q648 562 599 542 L541 520 535 561 529 570 532 582 561 600 Q573 608 566 620 Q524 625 482 619 L480 598 482 575 479 566 490 531 497 496 458 487 Q420 509 369 499 L357 495 Q361 531 369 558 L367 568 376 579 372 598 370 631 362 633 361 608 349 623 332 632 307 631 307 625 325 610 332 587 337 570 331 547 303 494 Q286 481 292 446 L271 459 261 492 259 551 253 575 256 596 256 625 244 629Z M348 432 L384 431 372 378 Q367 396 348 432Z"/></clipPath>
+</defs></svg>
+<header class="header wrap">
+  <a class="brand" href="#top" aria-label="Pulse Dance, на главную"><span class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i></span>pulse<span class="brand-sub">dance</span></a>
+  <nav id="nav" aria-label="Разделы сайта"><a href="#styles">Направления</a><a href="#schedule">Расписание</a><a href="#prices">Цены</a><a href="#school">О школе</a><a href="#contacts">Контакты</a></nav>
+  <button class="btn lime top-cta" data-book="Пробное занятие">На пробное <span>↗</span></button>
+  <button id="menu" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню">☰</button>
+</header>
+<main>
+<section class="hero wrap">
+  <div class="hero-copy">
+    <p class="location"><span></span> Школа танцев · Казань</p>
+    <h1>Танцуй<br>в своём<span class="photo-pill" aria-hidden="true"></span><br><em>ритме</em><span class="red-dot">.</span></h1>
+    <p class="intro">От первых шагов в зале до выхода на сцену. Танцевальные группы для детей и взрослых в Казани.</p>
+    <div class="mini-grid">
+      <a class="mini" href="#styles"><small>Направления</small><strong>Найти свой стиль</strong><b aria-hidden="true">↗</b></a>
+      <a class="mini" href="#schedule"><small>Расписание</small><strong>Выбрать занятие</strong><b aria-hidden="true">↗</b></a>
+    </div>
+  </div>
+  <div class="poster">
+    <div class="poster-grid" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="poster-label"><span class="live-dot"></span> Pulse Dance</div>
+    <div class="poster-price"><span>пробное</span><strong>400 ₽</strong></div>
+    <div class="figure"><img src="assets/style5.jpg" alt="Пара из Pulse Dance исполняет бачату на сцене"></div>
+    <a class="caption" href="#styles">Бачата <span>↗</span></a>
+    <button class="poster-cta" data-book="Пробное занятие">Записаться на пробное <b>↗</b></button>
+  </div>
+</section>
+<div class="bands" aria-hidden="true"><div class="band rear">PULSE DANCE　✳　КАЗАНЬ　✳　PULSE DANCE　✳　КАЗАНЬ　✳　PULSE DANCE　✳　КАЗАНЬ　✳　PULSE DANCE</div><div class="band front">Хип-хоп　✳　Бачата　✳　Джаз-фанк　✳　K-pop　✳　Латино　✳　Стретчинг　✳　Хип-хоп　✳　Бачата</div></div>
+<section id="styles" class="wrap section">
+  <h2>Выбери <em>свой стиль</em></h2>
+  <p class="section-intro">Посмотри, как танцуют наши группы.</p>
+  <div id="style-grid" class="style-grid"></div>
+  <p hidden id="extra-styles">Ещё одно <a class="text-link" href="https://www.youtube.com/watch?v=G0Vw-Zm7j94" target="_blank" rel="noopener">видео группы по хип-хопу ↗</a>. K-pop, High Heels и пилатес ищи в <a class="text-link" href="#schedule">расписании</a>.</p>
+  <button id="more-styles" class="btn plain" aria-expanded="false" aria-controls="style-grid">Все направления ↓</button>
+</section>
+<section class="schedule-section"><div id="schedule" class="wrap section">
+  <h2>Расписание <em>занятий</em></h2>
+  <p class="section-intro">Выбери зал и день недели.</p>
+  <div id="halls" class="switches" role="group" aria-label="Зал"></div>
+  <div id="days" class="days" role="group" aria-label="День недели"></div>
+  <div class="schedule-grid"><div id="lessons" aria-live="polite"></div><aside><span class="location">Первое занятие</span><strong>400 ₽</strong><p>Познакомься с педагогом и попробуй выбранное направление.</p><button class="btn ink" data-book="Пробное занятие">На пробное ↗</button></aside></div>
+  <a id="schedule-source" class="text-link" href="assets/large0.jpg" target="_blank" rel="noopener">Расписание зала на неделю ↗</a>
+</div></section>
+<section id="prices" class="wrap section">
+  <h2>Цены <em>и абонементы</em></h2>
+  <div class="switches" id="price-tabs" role="group" aria-label="Категория абонемента"></div>
+  <div id="price-list" class="price-list" aria-live="polite"></div>
+  <p id="price-note"></p><a class="text-link" href="assets/prices0.jpg" target="_blank" rel="noopener">Прайс школы целиком ↗</a>
+  <div class="gift"><div><h3>Подарочный <em>сертификат</em></h3><p>Подари близкому занятие в Pulse.</p></div><button class="btn plain" data-book="Подарочный сертификат">Заказать сертификат ↗</button></div>
+</section>
+<section class="school-bg"><div id="school" class="wrap section">
+  <div class="school-intro"><div><h2>Школа <em>Pulse</em></h2><p>Мы танцуем в Казани больше десяти лет. Дважды в год все группы выходят на сцену с отчётным концертом. Для кого-то это первое выступление, для кого-то — новая встреча со зрителями.</p><p>Наша команда организует Pulse Dance Fest, Pulse Pole Dance Competition и танцевальный лагерь Pulse &amp; YD Dance Camp.</p></div><img loading="lazy" src="assets/concert2.jpg" alt="Занятие в зале Pulse Dance"></div>
+  <div class="team-head"><h3>Наши <em>педагоги</em></h3><div><button id="team-prev" aria-label="Предыдущие педагоги">←</button><button id="team-next" aria-label="Следующие педагоги">→</button></div></div>
+  <div id="team" class="team" tabindex="0" aria-label="Фотографии педагогов по направлениям"></div>
+  <details><summary>Кто организует занятия и проекты</summary><ul><li><b>Юлия Исхакова</b> — директор школы и организатор проектов Pulse.</li><li><b>Екатерина Данилова</b> — координатор школы, фестиваля и соревнований.</li><li><b>Анастасия Тихонова</b> — SMM-менеджер и куратор танцевального лагеря.</li><li><b>Гузель Зарипова</b> — главный администратор школы, координатор фестиваля и соревнований.</li></ul></details>
+</div></section>
+</main>
+<footer id="contacts"><div class="wrap section"><h2>Ждём <em>в зале</em></h2><div class="contact-grid"><div><h3>Казань</h3><p>ул. Гагарина, 28В, ТД «Радуга»<br>ул. Ямашева, 102Б</p><p>С 10:00 до 22:00</p></div><div><h3>Связаться со школой</h3><p><a href="tel:+79656244842">+7 (965) 624-48-42</a><br>216-48-42</p><a href="https://t.me/pulsedance" target="_blank" rel="noopener">Telegram ↗</a>　<a href="https://vk.com/pulsezone" target="_blank" rel="noopener">ВКонтакте ↗</a></div><button class="btn lime" data-book="Пробное занятие">На пробное ↗</button></div><div class="foot"><span>Pulse Dance</span><a href="https://pulseteam.ru/pravila">Правила посещения</a><a href="https://pulseteam.ru/ofert">Договор оферты</a><a href="https://pulseteam.ru/privacy">Политика обработки данных</a><a href="#top">Наверх ↑</a></div></div></footer>
+<dialog id="booking" aria-labelledby="dialog-title"><button id="close" class="close" aria-label="Закрыть">×</button><h3 id="dialog-title"></h3><p id="context"></p><form id="form" method="dialog"><label>Имя<input required autocomplete="given-name" placeholder="Как к тебе обращаться?"></label><label>Телефон<input type="tel" required pattern="(?:[+\s\(\)\-]*[0-9]){7,15}[\s\)\-]*" autocomplete="tel" placeholder="+7"></label><label class="consent"><input type="checkbox" required><span>Соглашаюсь с <a href="https://pulseteam.ru/privacy" target="_blank" rel="noopener">политикой обработки данных</a></span></label><button class="btn lime">Проверить запись ↗</button><small>Демонстрационная форма. Данные остаются в браузере.</small></form><p id="result" hidden role="status">Форма заполнена. В прототипе заявка не отправляется.</p></dialog>
+</body></html>
